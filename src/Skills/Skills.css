@@ -1,0 +1,67 @@
+.skills-container{
+    height: 100vh;
+    width: 100%;
+}
+.skills-container h1{
+    text-align: center;
+    font-size: 60px;
+    margin-top: -150px;
+
+    
+}
+.laguageImages{
+    text-align: center;
+    margin-top: 30px;
+}
+.laguageImages h2{
+    margin-bottom: 30px;
+    margin-right: 850px;
+
+}
+.laguageImages img{
+
+    width: 100px;
+    height: 100px;
+    margin-left:45px;
+    padding: 15px;
+
+}
+
+.toolsImages{
+    text-align: center;
+    margin-top: 40px;
+}
+.toolsImages h2{
+    margin-bottom: 30px;
+    margin-right: 920px;
+}   
+.toolsImages img{
+    width: 100px;
+    height: 100px;
+    margin-left:40px;
+}
+
+.techSkillsSectionTwo{
+    margin-top: 30px;
+}
+
+
+@media (max-width: 600px) {
+
+    .skills-container{
+        margin-top: 232px;
+        width: 952px;
+     }
+    .skills-container h1 {
+        font-size: 40px;
+        margin-top: 50px;
+    }
+    .laguageImages h2, .toolsImages h2 {
+        margin-right: 0;
+    }
+    .laguageImages img, .toolsImages img {
+        width: 80px;
+        height: 80px;
+        margin-left: 20px;
+    }
+}

@@ -1,0 +1,128 @@
+.mainHeadingContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    margin-top: -10px;
+}
+
+.headings h1 {
+    font-size: 100px;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+}
+
+.h1-letter {
+    display: inline-block;
+    white-space: pre;
+}
+
+.headings h2 {
+    font-size: 40px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.DownloadCvBtn button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: 2px solid white;
+  color: -webkit-linear-gradient(to right, #2F80ED, #56CCF2); 
+    background-color: linear-gradient(to right, #2F80ED, #56CCF2);;
+    color: white ;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    
+}
+
+.DownloadCvBtn button:hover {
+    background-color: #ffcc70;
+    color: #000;
+}
+
+.item{
+     position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.5);
+}
+
+.animated-btn {
+  position: relative;
+  padding: 12px 24px;
+  font-size: 18px;
+  background: #29cc85;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.burst-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  opacity: 0;
+  pointer-events: none;
+  font-size: 20px;
+}
+
+
+@media (max-width: 1024px) {
+  .headings h1 {
+    font-size: 48px;
+  }
+
+  .DownloadCvBtn button {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+  .headings h1 {
+    font-size: 90px;
+  }
+
+  .mainHeadingContainer{
+    width: 952px;
+    height: auto;
+    margin-top: -5px;
+  }
+
+  .headings h2 {
+    font-size: 35px;
+  }
+
+  .DownloadCvBtn button {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+
+  .animated-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .burst-item {
+    font-size: 16px;
+  }
+}
+
