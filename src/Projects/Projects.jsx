@@ -6,7 +6,39 @@ import secondProjectImg from '../assets/secondPrj.png';
 import amozonImg from '../assets/amozone.png';
 import ToDoListImg from '../assets/todoList.png'
 
+
+
 function Projects(){
+
+  
+
+  const handleClike = ()=>{
+   window.open('https://item-near-by.vercel.app/', '_blank');
+  }
+
+  const handleFirstGitLink = () =>{
+    window.open('https://github.com/Surendra12S/ItemNearBy', '_blank' )
+  }
+
+  const projectTwoLiveLink = () =>{
+    window.open('https://food-delivery-frontend-69x1.onrender.com','_blank')
+  }
+   
+  const projectTwoGit = () =>{
+    window.open('https://github.com/Surendra12S/Food-Delivery-Website','_blank')
+  }
+
+  const projectThreeGit = () =>{
+    window.open('https://github.com/Surendra12S/Amazon-Clone-','blank')
+  }
+
+  const projectFourGit = () =>{
+    window.open('https://github.com/Surendra12S/To-Do-List-App','_blank')
+  }
+
+  const projectFourLive = ()=>{
+    window.open('https://to-do-list-app-zcy7.vercel.app/','_blank')
+  }
 
     return(
         <div className='ProjectsContainer'>
@@ -27,8 +59,8 @@ function Projects(){
                     <span>Mongoose</span>
                   </div>
                   <div>
-                    <button><RiExternalLinkFill />Live Demo</button>
-                    <button><IoLogoGithub />View Code</button>
+                    <button onClick={handleClike}><RiExternalLinkFill />Live Demo</button>
+                    <button onClick={handleFirstGitLink} ><IoLogoGithub />View Code</button>
                   </div>
                   
               </div>
@@ -44,8 +76,8 @@ function Projects(){
                         <span>Mongoose</span>
                       </div>
                       <div>
-                        <button><RiExternalLinkFill />Live Demo</button>
-                        <button><IoLogoGithub />View Code</button>
+                        <button onClick={projectTwoLiveLink} ><RiExternalLinkFill />Live Demo</button>
+                        <button onClick={projectTwoGit} ><IoLogoGithub />View Code</button>
                       </div>
               </div>
               </div>
@@ -63,7 +95,7 @@ function Projects(){
                     </div>
                     <div>
                       <button><RiExternalLinkFill />Live Demo</button>
-                      <button><IoLogoGithub />View Code</button>
+                      <button onClick={projectThreeGit} ><IoLogoGithub />View Code</button>
                     </div>
 
                 </div>
@@ -77,8 +109,8 @@ function Projects(){
                     <span>JavaScript</span>
                   </div>
                   <div>
-                    <button><RiExternalLinkFill />Live Demo</button>
-                    <button><IoLogoGithub />View Code</button>
+                    <button onClick={projectFourLive}  ><RiExternalLinkFill />Live Demo</button>
+                    <button onClick={projectFourGit} ><IoLogoGithub />View Code</button>
                     </div>
  
                 </div>

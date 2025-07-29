@@ -83,6 +83,7 @@ function Home() {
                 <h2 >Full Stack Web Developer</h2>
             </div>
             <div className='DownloadCvBtn'>
+                <a href='/Surendra Resume(Full Stack Web Developer).pdf' download >
                 <button
                     className="animated-btn"
                     ref={buttonRef}
@@ -94,6 +95,7 @@ function Home() {
                     <span className="burst-item" ref={(el) => (itemsRef.current[1] = el)}>★</span>
                     <span className="burst-item" ref={(el) => (itemsRef.current[2] = el)}>⚙️</span>
                 </button>
+                </a>
             </div>
             </div>
         </div>
