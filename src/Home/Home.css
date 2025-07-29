@@ -95,34 +95,22 @@
   }
 }
 
-/* Mobile Devices */
+
 @media (max-width: 600px) {
-  .headings h1 {
-    font-size: 90px;
+  .headings{
+    margin-top: 100px;
   }
-
-  .mainHeadingContainer{
-    width: 952px;
-    height: auto;
-    margin-top: -5px;
+  .headings h1{
+    font-size: 50px;
   }
-
-  .headings h2 {
-    font-size: 35px;
+  .headings h2{
+    font-size: 25px;
   }
-
-  .DownloadCvBtn button {
+  .DownloadCvBtn button{
     font-size: 14px;
-    padding: 8px 18px;
+    padding: 8px 16px;
   }
-
-  .animated-btn {
-    font-size: 16px;
-    padding: 10px 20px;
-  }
-
-  .burst-item {
-    font-size: 16px;
-  }
+  
+  
 }
 

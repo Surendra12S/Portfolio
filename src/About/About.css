@@ -120,21 +120,31 @@ color: #56CCF2;  /* fallback for old browsers */
 
 @media (max-width: 600px) {
 
-  .about-container{
-    width: 952px;
-    margin-top: -1px;
-  }
-
-  .about-container h1 {
+  
+  .about-container h1{
     font-size: 40px;
+    margin-top: 1px;
   }
+  .introduction{
+    width: 80%;
 
-
-
-  .introduction {
-    width: 90%;
-    margin-top: 30px;
   }
+  .introduction h2{
+    font-size: 15px;
+  }
+  .EduExpSection{
+    flex-direction: column;
+  }
+  .eduContainer{
+    width: 300px;
+    height: 210px;
+    margin-left: 18px;
+    margin-top: -30px;
 
-
+  }
+  .expContainer{
+     width: 300px;
+    height: 210px;
+    margin-left: 18px;
+  }
 }

@@ -13,8 +13,8 @@
 }
   
 body{
-    position: relative;
-    top: 60px;
+    overflow-x: hidden;
+    background-color: black;
 }
 
 .grid-container {
@@ -90,4 +90,5 @@ body{
     font-size: 4rem;
   }
 }
+
 

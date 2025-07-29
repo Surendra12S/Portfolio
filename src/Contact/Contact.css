@@ -144,35 +144,130 @@ color: #A1A1AA;
    
 
 
-    @media (max-width: 600px) {
+   @media (max-width: 600px) {
 
-        .ContactContainer{
-            width: 952px;
-        }
+  
+  .contactSecondContainer {
+    flex-direction: column;
+    align-items: center;
+  }
 
-        .ContactFormContainer{
-            width: 90%;
-            margin-left: 20px;
-        }
-        .GetInTouchContainer{
-            margin-right: 0px;
-            margin-top: -200px;
-        }
-        .ContactInfoContainer{
-            margin-right: 0px;
-            margin-left: 20px;
-        }
-        .emailDetailesContainer{
-            margin-left: 0px;
-        }
-        .emailPara{
-            margin-left: 0px;
-        }
-        .ContactContainer{
-            display: block;
+  .line{
+    position: relative;
+    top: 8px;
+    left: 8px;
+  }
 
-        }
-        .contactSecondContainer{
-            flex-direction: column;
-        }
-    }
+  .GetInTouchContainer {
+    margin-left: 44px;
+    width: 90%;
+    margin-top: -40px;
+  }
+
+  .FirstHeading {
+    font-size: 36px;
+    text-align: center;
+    margin: 40px 0 10px 0;
+  }
+
+  .GetInTouchContainer p {
+    font-size: 14px;
+    text-align: center;
+    margin: 5px 20px;
+  }
+
+  .ContactFormContainer {
+    width: 95%;
+    height: auto;
+    padding-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .headingsLine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .ContactFormContainer h1 {
+    font-size: 22px;
+    margin: 15px 10px 0 10px;
+  }
+
+  .ContactFormContainer img {
+    width: 24px;
+    height: 24px;
+    margin-top: 14px;
+  }
+
+  .paraTag {
+    margin: 5px 20px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .ContactFormContainer input {
+    width: 80%;
+    margin: 12px auto 0 auto;
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .ContactFormContainer textarea {
+    width: 80%;
+    margin: 20px auto 0 auto;
+    display: block;
+    font-size: 14px;
+  }
+
+  .ContactFormContainer button {
+    margin: 20px auto 0 auto;
+    padding: 12px 24px;
+    display: block;
+    font-size: 16px;
+    width: 80%;
+  }
+
+  .ContactInfoContainer {
+    margin: 30px 0 0 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .ContactInfoHeading {
+    justify-content: center;
+  }
+
+  .headingLine {
+    margin-right: 8px;
+  }
+
+  .belowheadingPara,
+  .emailPara {
+    font-size: 14px;
+    margin-left: 0;
+  }
+
+  .SocialIconsContainer {
+    justify-content: center;
+    margin-left: 0;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 32px;
+  }
+
+  .emailDetailesContainer {
+    justify-content: center;
+    margin-left: 0;
+    font-size: 14px;
+    gap: 8px;
+   
+  }
+
+  .emailIcon {
+    font-size: 20px;
+  }
+}

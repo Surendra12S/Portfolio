@@ -72,7 +72,25 @@ background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, F
 }
 
 
+@media (max-width: 600px) {
 
+    .nav-brand h1{
+        font-size: 15px;
+        
+    }
+   
+    .nav-links ul li{
+        font-size: 11px;
+    }
+    .nav-links ul{
+        gap: 20px;
+    }
+     .navbar{
+        padding-right:25px;
+        padding-left: 25px;
+     }
+
+}
 
 
 
