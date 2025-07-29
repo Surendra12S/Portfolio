@@ -47,7 +47,7 @@ function Contact() {
 
                         <div className='SocialIconsContainer'>
                             <div className='githubIcon'>
-                                <IoLogoGithub className='icons' href={https://github.com/Surendra12S} />
+                                <IoLogoGithub className='icons' />
                             </div>
                             <div>
                                 <FaLinkedin className='icons' />
