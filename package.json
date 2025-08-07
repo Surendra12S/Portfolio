@@ -10,7 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@gsap/react": "^2.1.2",
+    "emailjs": "^4.0.3",
     "gsap": "^3.13.0",
     "nodemon": "^3.1.10",
     "react": "^19.1.0",

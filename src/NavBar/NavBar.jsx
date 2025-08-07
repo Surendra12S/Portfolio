@@ -17,8 +17,8 @@ function NavBar() {
         gsap.from(".nav-links li", {
             y: -20,
             opacity: 0,
+            delay:1,
             duration: 1,
-            delay: 1,
             stagger: 0.3,
             ease: "easeInOut"
         })

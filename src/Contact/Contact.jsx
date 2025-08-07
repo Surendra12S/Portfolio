@@ -6,9 +6,25 @@ import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaTelegram } from "react-icons/fa";
 import { IoIosSend } from "react-icons/io";
+import emailjs from "@emailjs/browser";
 import { MdEmail } from "react-icons/md";
+import React,{useRef} from 'react';
 
 function Contact() {
+
+    const form = useRef();
+
+    const sendEmail =(e)=>{
+    e.preventDefault();
+
+    emailjs.sendForm("service_qtu92la", "template_a8e26up",form.current, "3ehNKHgQ_Wg1qvWfo")
+    .then(()=>{alert("Message sent successfully!");
+     form.current.reset();
+    },(error)=>{
+        alert("Failed to sent message, please try again",error);
+    }  );
+    
+    }
 
     return (
         <div className='ContactContainer'>
@@ -28,13 +44,16 @@ function Contact() {
                             </dix>
 
                             <p className='paraTag' >Feel free to reach out via the form below</p>
+                            <form ref={form} onSubmit={sendEmail} >
                             <div>
-                                <input placeholder='Your name' />
-                                <input placeholder='Your email address' />
+                                <input placeholder='Your name' type='text' name='name' required />
+                                <input placeholder='Your email address' type='email' name='user_email' required />
                             </div>
-                            <textarea placeholder='What i can help you with?' ></textarea>
-                            <button><IoIosSend />Send Message</button>
+                            <textarea placeholder='What i can help you with?' name='message' required  ></textarea>
+                            <button type='submit'><IoIosSend />Send Message</button>
+                            </form>
                         </div>
+                    
                     </div>
 
                     <div className='ContactInfoContainer'>
